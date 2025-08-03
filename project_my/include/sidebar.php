@@ -1,8 +1,8 @@
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="dist/dist/index3.html" class="brand-link">
-      <img src="dist/dist/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="home.php" class="brand-link">
+      <img src="dist/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -11,7 +11,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/dist/dist/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -36,7 +36,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="home.php" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -50,9 +50,9 @@
            
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <!-- <p>Top Navigation</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -76,7 +76,7 @@
         
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+              <i class="nav-icon fas fa-edit"></i> -->
               <p>
                 users
                 <i class="fas fa-angle-left right"></i>
@@ -100,6 +100,35 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
+
+
+
+
+
+
+             <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Important</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Warning</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Informational</p>
+            </a>
+          </li>
+
+
+
+
+
+
+<!-- 
               <i class="nav-icon fas fa-edit"></i>
               <p>
                Category
@@ -141,7 +170,7 @@
               </li>
             
               <li class="nav-item">
-                <a href="../examples/contact-us.html" class="nav-link">
+                <a href="#l" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contact us</p>
                 </a>
@@ -154,7 +183,7 @@
           <li class="nav-header">MULTI LEVEL EXAMPLE</li>
         
          
-          <li class="nav-header">LABELS</li>
+          <li class="nav-header">LABELS</li> -->
         
         
           
