@@ -10,23 +10,23 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="dist/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="dist/dist/plugins/fontawesome-free/css/all.min.css">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="dist/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="dist/dist/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/dist/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="dist/index2.html"><b>Admin</b>LTE</a>
+    <a href="dist/dist/index2.html"><b>Admin</b>LTE</a>
   </div>
 
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
 
-      <form action="dist/index.html" method="post">
+      <form action="dist/dist/index.html" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Full name">
           <div class="input-group-append">
@@ -96,10 +96,10 @@
 <!-- /.register-box -->
 
 <!-- jQuery -->
-<script src="dist/plugins/jquery/jquery.min.js"></script>
+<script src="dist/dist/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/dist/js/adminlte.min.js"></script>
+<script src="dist/dist/dist/js/adminlte.min.js"></script>
 </body>
 </html>
