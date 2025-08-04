@@ -1,0 +1,87 @@
+/* Full screen background section */
+
+body {
+  padding-top: 50px; /* Prevent content being hidden under navbar */
+}
+.hero-section {
+  position: relative;
+  background: url("../dist/image/home-view.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark transparent layer */
+  z-index: 1;
+}
+
+/* Text on top */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+/* get start hover */
+.btn-custom {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background-color: #ff3b2e;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* footer-css  start*/
+
+.footer {
+  font-size: 15px;
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #dddddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
