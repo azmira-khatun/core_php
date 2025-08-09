@@ -52,7 +52,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <!-- <p>Top Navigation</p>
+                  <p>Top Navigation</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -76,7 +76,7 @@
         
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i> -->
+              <i class="nav-icon fas fa-edit"></i>
               <p>
                 users
                 <i class="fas fa-angle-left right"></i>
@@ -86,13 +86,94 @@
               <li class="nav-item">
                 <a href="./add_user.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add User</p>
+                  <p>Admin</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./manage_user.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Users</p>
+                  <p>Customer</p>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a href="./manage_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Staff</p>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+
+
+ <!-- event manager sidebar dropdown -->
+<li class="nav-item">
+           
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Top Navigation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Top Navigation + Sidebar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Boxed</p>
+                </a>
+              </li>
+             
+             
+             
+             
+            </ul>
+          </li>
+        
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+               Events
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./add_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>create new events</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./manage_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Edit Event</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./add_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Delete Event</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./add_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Details</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./add_user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cancle Events</p>
                 </a>
               </li>
              
@@ -104,22 +185,20 @@
 
 
 
-
-
              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
+              <p class="text">Reports</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
+              <p>Notifications</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
+              <p>Settings</p>
             </a>
           </li>
 
