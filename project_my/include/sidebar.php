@@ -86,184 +86,20 @@
               <li class="nav-item">
                 <a href="home.php?page=mira" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Admin</p>
+                  <p>Add User</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="home.php?page=2" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Customer</p>
+                  <p>Manage Users</p>
                 </a>
               </li>
-               <li class="nav-item">
-                <a href="home.php?page=3" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Staff</p>
-                </a>
-              </li>
-             
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="home.php?page=4" class="nav-link">
-
-
- <!-- event manager sidebar dropdown -->
-<li class="nav-item">
-           
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-             
-             
-             
-             
-            </ul>
-          </li>
-        
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-               Events
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./events.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>create new events</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./manage_user.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Edit Event</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./add_user.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Delete Event</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./add_user.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>View Details</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./add_user.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Cancle Events</p>
-                </a>
-              </li>
-             
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-
-
-
-
-             <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Reports</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Settings</p>
-            </a>
-          </li>
 
 
 
 
 
-
-<!-- 
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-               Category
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./add_cat.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add category</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./manage_cat.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Category</p>
-                </a>
-              </li>
-             
-            </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-         
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-            
-              <li class="nav-item">
-                <a href="#l" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-header">MISCELLANEOUS</li>
-     
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-        
-         
-          <li class="nav-header">LABELS</li> -->
-        
         
           
         </ul>
@@ -272,3 +108,8 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
+
+
+
+
