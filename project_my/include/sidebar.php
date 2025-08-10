@@ -100,9 +100,20 @@
 
 
 
+
+
         
           
         </ul>
+
+                       <!-- Event মেনু আইটেম -->
+        <li class="nav-item">
+          <a href="/event" class="nav-link">
+            <i class="nav-icon fas fa-calendar-alt"></i>
+            <p>Event</p>
+          </a>
+        </li>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>

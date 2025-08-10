@@ -17,7 +17,7 @@
 	   
 	   if($page=="mira"){
 		   
-		 include("pages/user/add_user.php"); 
+		 include("../pages/user/add_user.php"); 
 		   
 	   }else if($page==2){
 		   
