@@ -35,6 +35,12 @@
 
       <!-- Default box -->
       <div class="card">
+
+
+        <?php
+       include("placholder.php");
+        ?>
+       
         <div class="card-header">
           <h3 class="card-title">Title</h3>
 

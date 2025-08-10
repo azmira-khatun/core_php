@@ -84,19 +84,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./admin_task.php" class="nav-link">
+                <a href="home.php?page=mira" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Admin</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./manage_user.php" class="nav-link">
+                <a href="home.php?page=2" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Customer</p>
                 </a>
               </li>
                <li class="nav-item">
-                <a href="./manage_user.php" class="nav-link">
+                <a href="home.php?page=3" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Staff</p>
                 </a>
@@ -105,7 +105,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="home.php?page=4" class="nav-link">
 
 
  <!-- event manager sidebar dropdown -->
