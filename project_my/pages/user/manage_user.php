@@ -56,7 +56,17 @@
                       <td>1.</td>
                       <td>Update software</td>
                       <td>e@gmail.com</td>
-                      <td>Edit || Delete || Show</td>
+
+                      <!-- <td>Edit || Delete || Show</td> -->
+
+
+
+
+            <td>
+        <button class="btn btn-sm btn-primary">Edit</button>
+        <button class="btn btn-sm btn-danger">Delete</button>
+        <button class="btn btn-sm btn-success">Show</button>
+      </td>
                     </tr>
                     <tr>
                       <td>2.</td>
