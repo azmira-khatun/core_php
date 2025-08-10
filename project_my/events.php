@@ -100,13 +100,13 @@ include("include/sidebar.php")
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <!-- <div class="footer">
         <p>&copy; 2025 DonorHub. All Rights Reserved.</p>
         <p>For support, visit our <a href="#">Help Center</a>.</p>
-    </div>
+    </div> -->
 
     <!-- Modal (for event registration) -->
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -131,11 +131,11 @@ include("include/sidebar.php")
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 <!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
+<!-- <aside class="control-sidebar control-sidebar-dark"> -->
     <!-- Control sidebar content goes here -->
-</aside>
+<!-- </aside> -->
 <!-- /.control-sidebar -->
 
 <!-- Main Footer -->
