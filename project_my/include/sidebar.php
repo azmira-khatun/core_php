@@ -121,13 +121,18 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="/event/list" class="nav-link">
+          <a href="home.php?page=5" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
             <p>Event List</p>
           </a>
         </li>
+
+
+
+
+       
         <li class="nav-item">
-          <a href="/event/create" class="nav-link">
+          <a href="home.php?page=4" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
             <p>Create Event</p>
           </a>

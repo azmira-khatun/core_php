@@ -48,14 +48,17 @@
                       <th style="width: 10px">#</th>
                       <th>Name</th>
                       <th>Email</th>
+                       <th>Contact</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1.</td>
-                      <td>Update software</td>
-                      <td>e@gmail.com</td>
+                      <td>Azmira</td>
+                      <td>azmira@gmail.com</td>
+                      <td>012345</td>
+
 
                       <!-- <td>Edit || Delete || Show</td> -->
 
@@ -70,28 +73,41 @@
                     </tr>
                     <tr>
                       <td>2.</td>
-                      <td>Update software</td>
-                      <td>e@gmail.com</td>
-                      <td>Edit || Delete || Show</td>
+                      <td>Nishat Tasnim</td>
+                      <td>n@gmail.com</td>
+                      <td>012345</td>
+
+                      <td>
+        <button class="btn btn-sm btn-primary">Edit</button>
+        <button class="btn btn-sm btn-danger">Delete</button>
+        <button class="btn btn-sm btn-success">Show</button>
+      </td>
                     </tr>
                     <tr>
                       <td>3.</td>
-                      <td>Update software</td>
+                      <td>Ayan Ahsan</td>
                       <td>e@gmail.com</td>
-                      <td>Edit || Delete || Show</td>
+                      <td>012345</td>
+
+                     <td>
+        <button class="btn btn-sm btn-primary">Edit</button>
+        <button class="btn btn-sm btn-danger">Delete</button>
+        <button class="btn btn-sm btn-success">Show</button>
+      </td>
                     </tr>
                     <tr>
                       <td>3.</td>
-                      <td>Update software</td>
+                      <td>Shohani Lata</td>
                       <td>e@gmail.com</td>
-                      <td>Edit || Delete || Show</td>
+                      <td>012345</td>
+
+                      <td>
+        <button class="btn btn-sm btn-primary">Edit</button>
+        <button class="btn btn-sm btn-danger">Delete</button>
+        <button class="btn btn-sm btn-success">Show</button>
+      </td>
                     </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Update software</td>
-                      <td>e@gmail.com</td>
-                      <td>Edit || Delete || Show</td>
-                    </tr>
+                   
                   </tbody>
                 </table>
               </div>

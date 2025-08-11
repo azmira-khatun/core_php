@@ -17,7 +17,7 @@
 	   
 	   if($page=="mira"){
 		   
-		 include("../pages/user/add_user.php"); 
+		 include("pages/user/add_user.php"); 
 		   
 	   }else if($page==2){
 		   
@@ -28,11 +28,11 @@
 		  
 	   }else if($page==4){
 		   
-		   include("pages/category/add_cat.php");
+		   include("pages/event/create-event.php");
 		  
 	   }else if($page==5){
 		   
-		   include("pages/category/manage_cat.php");
+		   include("pages/event/event-list.php");
 		  
 	   }else if($page==6){
 		   
