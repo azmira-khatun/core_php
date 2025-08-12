@@ -1,5 +1,39 @@
+<?php 
 
-  <!-- Content Wrapper. Contains page content -->
+include("config.php");
+
+  if (isset($_POST['submit'])) {
+
+    $first_name = $_POST['firstname'];
+
+   
+
+    $email = $_POST['email'];
+
+    $contact = $_POST['contact'];
+
+
+    $sql = "INSERT INTO `users`(`firstname`, `email`, `contact`) 
+
+           VALUES ('$first_name','$email','$contact')";
+
+    $result = $conn->query($sql);
+
+    if ($result == TRUE) {
+
+      echo "New record created successfully.";
+
+    }else{
+
+      echo "Error:". $sql . "<br>". $conn->error;
+
+    }
+
+    $conn->close();
+
+  } 
+
+?>   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -48,15 +82,15 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your name">
+                    <input type="text" name="firstname" class="form-control" id="exampleInputEmail1" placeholder="Enter your name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Contact</label>
-                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact number">
+                    <input type="number" name="contact" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact number">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">File input</label>
@@ -78,7 +112,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary" style="background-color: #cb590eff !important;">Submit</button>
+                  <button type="submit" name="submit" class="btn btn-primary" style="background-color: #cb590eff !important;">Submit</button>
                 </div>
               </form>
             </div>
