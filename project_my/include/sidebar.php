@@ -144,10 +144,23 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-               venue
+               Venue
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="home.php?page=6" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>venue</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="home.php?page=7" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>venue table</p>
+                </a>
+              </li>
 
 
       </nav>

@@ -1,42 +1,96 @@
-<form action="/venues/create" method="POST">
-  <label for="name">Venue Name:</label>
-  <input type="text" id="name" name="name" required>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>venue</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="home.php">Home</a></li>
+            <li class="breadcrumb-item active">Event</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
 
-  <label for="location">Location:</label>
-  <input type="text" id="location" name="location" required>
+  <!-- Main content -->
+  <section class="content">
 
-  <label for="capacity">Capacity (number of guests):</label>
-  <input type="number" id="capacity" name="capacity" required>
+    <!-- Default box -->
+    <div class="card" style="max-width: 700px;">
+      <div class="card-header">
+        <h3 class="card-title">Event Form</h3>
 
-  <label for="area_size">Area Size (m²):</label>
-  <input type="number" step="0.01" id="area_size" name="area_size">
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+            <i class="fas fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
 
-  <label for="facilities">Facilities (comma-separated):</label>
-  <input type="text" id="facilities" name="facilities">
-
-  <label for="floor_plan">Floor Plan Link or Description:</label>
-  <input type="text" id="floor_plan" name="floor_plan">
-
-  <label for="rental_cost">Rental Cost:</label>
-  <input type="number" step="0.01" id="rental_cost" name="rental_cost">
-
-  <label for="deposit_required">Deposit Required:</label>
-  <input type="number" step="0.01" id="deposit_required" name="deposit_required">
-
-  <label for="availability">Availability (dates or times):</label>
-  <input type="text" id="availability" name="availability">
-
-  <label for="contact_person">Contact Person:</label>
-  <input type="text" id="contact_person" name="contact_person">
-
-  <label for="contact_phone">Contact Phone:</label>
-  <input type="text" id="contact_phone" name="contact_phone">
-
-  <label for="contact_email">Contact Email:</label>
-  <input type="email" id="contact_email" name="contact_email">
-
-  <label for="description">Description:</label>
-  <textarea id="description" name="description"></textarea>
-
-  <button type="submit">Add Venue</button>
+      <div class="card-body" style="background-color: #917a88ff !important;">
+        <div class="card card-primary">
+          <div class="card-header" style="background-color: #dc1b92ff !important; padding:10px; color: white;">
+            <h3 class="card-title"> Details of Venue </h3>
+          </div>
+          <!-- form start -->
+         <form>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="eventName">Name</label>
+      <input type="text" class="form-control" id="eventName" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="eventLocation">Location</label>
+      <input type="text" class="form-control" id="eventLocation" placeholder="Enter location">
+    </div>
+    <div class="form-group">
+      <label for="eventCapacity">Capacity</label>
+      <input type="number" class="form-control" id="eventCapacity" placeholder="Enter capacity"
+             min="1" step="1">
+    </div>
+    <div class="form-group">
+      <label for="eventFeatures">Availability / Special Features</label>
+      <input type="text" class="form-control" id="eventFeatures" placeholder="Enter features or availability">
+    </div>
+    <div class="form-group">
+      <label for="eventImage">Event Image</label>
+      <div class="input-group">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="eventImage">
+          <label class="custom-file-label" for="eventImage">Choose file</label>
+        </div>
+        <div class="input-group-append">
+          <span class="input-group-text">Upload</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="publishEvent">
+      <label class="form-check-label" for="publishEvent">Publish immediately</label>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button type="submit" class="btn btn-primary" style="background-color: #cb590e !important;">
+      Submit
+    </button>
+  </div>
 </form>
+
+        </div>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

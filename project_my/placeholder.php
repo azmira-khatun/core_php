@@ -36,11 +36,11 @@
 		  
 	   }else if($page==6){
 		   
-		   include("pages/user/view_user.php");
+		   include("pages/venue/venue-form.php");
 		  
 	   }else if($page==7){
 		   
-		    include("pages/category/add_cat.php");
+		    include("pages/venue/venue-table.php");
 		  
 	   }
 	   
