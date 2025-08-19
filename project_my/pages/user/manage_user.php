@@ -1,115 +1,109 @@
-<?php 
+<?php
 include("config.php");
-
-// Insert Data
-if (isset($_POST['submit'])) {
-    $name    = $_POST['name'];
-    $email   = $_POST['email'];
-    $contact = $_POST['contact'];
-
-    $sql = "INSERT INTO users (`name`, `email`, `contact`) VALUES ('$name','$email','$contact')";
-    if ($conn->query($sql) === TRUE) {
-        echo "<p style='color:green;'>New record created successfully.</p>";
-    } else {
-        echo "<p style='color:red;'>Error: " . $conn->error . "</p>";
-    }
+if (!isset($conn)) {
+    header("location:login.php");
+    exit();
 }
 
-// Fetch Data
-$result = $conn->query("SELECT * FROM users");
+
+$r = "";
+if (isset($_POST["btnDelete"])) {
+    $u_id = $_POST["txtId"];
+
+    $sql = "DELETE FROM users WHERE id = '$u_id'";
+    $result = $conn->query($sql);
+
+    if ($result === TRUE) {
+        $r = "<div class='alert alert-success'>User deleted successfully.</div>";
+    } else {
+        $r = "<div class='alert alert-danger'>Error deleting record: " . $conn->error . "</div>";
+    }
+}
 ?>
 
-<!-- Content Wrapper -->
 <div class="content-wrapper">
-
-  <!-- Content Header -->
-  <section class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1>Manage Users</h1>
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Manage users</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Manage Users</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Manage Users</li>
-          </ol>
+    </section>
+
+    <section class="content">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Manage Users</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-3">
+                <?php echo $r; ?>
+            </div>
+
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped table-bordered">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Contact</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $users = $conn->query("SELECT id, firstname, lastname, phone, email, password FROM users");
+                                while (list($id, $fname, $lname, $phone, $email, $_pass) = $users->fetch_row()) {
+                                    echo "<tr> 
+        <td>$id</td>
+        <td>$fname</td>
+        <td>$lname</td>
+        <td>$phone</td>
+        <td>$email</td>
+        <td>$_pass</td>
+        <td> 
+            <div class='d-flex align-items-center'>
+                <form action='' method='post' onsubmit='return confirm(\"Are you sure you want to delete this user?\");' style='margin-right: 15px;'>
+                    <input type='hidden' name='txtId' value='$id' />
+                    <button type='submit' name='btnDelete' class='btn btn-danger btn-sm' title='Delete'>
+                        <i class='fas fa-trash'></i>
+                    </button>
+
+                    </form>
+                <a href='home.php?page=3&id=$id' class='btn btn-primary btn-sm' title='Edit'>
+                    <i class='fas fa-edit'></i>
+                </a>
+            </div>
+        </td>
+    </tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main content -->
-  <section class="content">
-
-    <!-- Add User Form -->
-    <div class="card card-primary" style="max-width: 600px; margin-bottom: 20px;">
-      <div class="card-header">
-        <h3 class="card-title">Add User</h3>
-      </div>
-      <form method="post" action="">
-        <div class="card-body">
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
-          </div>
-          <div class="form-group">
-            <label>Email address</label>
-            <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
-          </div>
-          <div class="form-group">
-            <label>Contact</label>
-            <input type="number" name="contact" class="form-control" placeholder="Enter Contact Number" required>
-          </div>
-        </div>
-        <div class="card-footer">
-          <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- User List Table -->
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Users List</h3>
-      </div>
-      <div class="card-body">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th style="width: 10px">#</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Contact</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php 
-            if ($result->num_rows > 0) {
-                $i = 1;
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>
-                            <td>{$i}</td>
-                            <td>{$row['name']}</td>
-                            <td>{$row['email']}</td>
-                            <td>{$row['contact']}</td>
-                            <td>
-                              <button class='btn btn-sm btn-primary'>Edit</button>
-                              <button class='btn btn-sm btn-danger'>Delete</button>
-                              <button class='btn btn-sm btn-success'>Show</button>
-                            </td>
-                          </tr>";
-                    $i++;
-                }
-            } else {
-                echo "<tr><td colspan='5'>No users found</td></tr>";
-            }
-            ?>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-  </section>
+    </section>
 </div>

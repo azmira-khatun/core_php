@@ -1,37 +1,37 @@
 <?php
 session_start();
-require 'config.php'; // contains $dms = new mysqli(...);
+require 'config.php'; // contains $conn = new mysqli(...);
 
 $errors = [];
 
 if (isset($_POST['submit'])) {
-    // Sanitize input
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
 
-    // Basic validation
     if (empty($email) || empty($password)) {
         $errors[] = "Please enter both email and password.";
     }
 
     if (empty($errors)) {
-        // Prepare and execute the query to find the user by email
-        $stmt = $dms->prepare("SELECT id, password FROM users WHERE email = ?");
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $user = $result->fetch_assoc();
-        $stmt->close();
-
-        // Verify if a user was found and the password is correct
-        if ($user && password_verify($password, $user['password'])) {
-            // Login successful
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['user_email'] = $email;
-            header("Location: home.php");
-            exit;
+        // use $conn instead of $conn
+        $stmt = $conn->prepare("SELECT id, password FROM users WHERE email = ?");
+        if (!$stmt) {
+            $errors[] = "Query prepare failed: " . $conn->error;  // debugging message
         } else {
-            $errors[] = "Invalid email or password.";
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $user = $result->fetch_assoc();
+            $stmt->close();
+
+          if ($user && $password == $user['password']) {
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_email'] = $email;
+                header("Location: home.php");
+                exit;
+            } else {
+                $errors[] = "Invalid email or password.";
+            }
         }
     }
 }
