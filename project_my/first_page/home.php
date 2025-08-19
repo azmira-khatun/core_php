@@ -26,9 +26,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Events</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
-          </li>
+         <li class="nav-item">
+  <a class="nav-link" href="ui.php">Register</a>
+</li>
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
           </li>
@@ -46,6 +46,15 @@
       <a href="../dist/image/home-view.jpg" class="btn btn-custom mt-3" onclick="event.preventDefault();">Get Started</a>
     </div>
   </section>
+
+
+
+
+
+
+
+
+  
 
   <!-- footer-start -->
 <?php

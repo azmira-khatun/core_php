@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 include("config.php");
 
 if (isset($_POST['submit'])) {
@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
     }
     $conn->close();
 }
-?> 
+?>  -->
 
 <div class="content-wrapper">
   <section class="content-header">
@@ -39,18 +39,52 @@ if (isset($_POST['submit'])) {
           <form method="post" action="">
             <div class="card-body">
               <div class="form-group">
-                <label for="exampleInputName">Name</label>
+                <label for="exampleInputName">First Name</label>
                 <input type="text" name="firstname" class="form-control" id="exampleInputName" placeholder="Enter your name" required>
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputName">Last Name</label>
+                <input type="text" name="lastname" class="form-control" id="exampleInputName" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
               </div>
               <div class="form-group">
-                <label for="exampleInputContact">Contact</label>
-                <input type="number" name="contact" class="form-control" id="exampleInputContact" placeholder="Enter Your Contact number" required>
+                <label for="exampleInputName">Adderss</label>
+                <input type="text" name="address" class="form-control" id="exampleInputName" placeholder="Enter your address" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputContact">Password</label>
+                <input type="number" name="password" class="form-control" id="exampleInputContact" placeholder="Enter Your password number" required>
               </div>
             </div>
+
+            <!-- <div class="form-group">
+                <label for="exampleInputContact">Roll</label>
+                <input type="number" name="roll" class="form-control" id="exampleInputContact" placeholder=" please Enter" required>
+              </div>
+            </div> -->
+
+            <?php
+$roles = [
+    1 => 'Admin',
+    2 => 'Editor',
+    3 => 'Author',
+];
+?>
+<div class="form-group">
+  <label for="role">Role</label>
+  <select name="role_id" class="form-control" id="role" required>
+    <option value="">-- Select Role --</option>
+    <?php foreach ($roles as $id => $name): ?>
+      <option value="<?php echo htmlspecialchars($id); ?>">
+        <?php echo htmlspecialchars($name); ?>
+      </option>
+    <?php endforeach; ?>
+  </select>
+</div>
+
 
             <div class="card-footer">
               <button type="submit" name="submit" class="btn btn-primary" style="background-color: #cb590eff !important;">Submit</button>
